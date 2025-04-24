@@ -1,0 +1,572 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Catalyst</title>
+  <link rel="icon" href="logo.jpeg" />
+
+  <!-- External Styles & AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+</head>
+<body>
+
+  <!-- HEADER + NAVIGATION -->
+  <header>
+    <h1>Green Catalyst</h1>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#hero"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#solutions"> <i class="fa-solid fa-magnifying-glass"></i>Solution</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#impact"> <i class="fa-solid fa-square-poll-vertical"></i>Impact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#join"> <i class="fa-solid fa-right-to-bracket"></i>Join</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero d-flex align-items-center text-center text-white bg-dark py-5 px-9" id="hero">
+    <div class="container">
+      <h2 class="display-4 fw-bold mb-4">Be the Catalyst for a Greener Tomorrow</h2><br>
+      <button class="btn btn-success btn-lg" onclick="scrollToSection('nature')">Explore Solutions</button>
+    </div>
+  </section>
+  
+  <section id="solutions">
+    <h2>Our Core Focus Areas</h2>
+    <div class="solutions">
+      <div class="card">
+        <img src="img1.jpg" alt="Nature-Based Solutions">
+        <a href="#nature">Nature-Based Solutions</a>
+      </div>
+      <div class="card">
+        <img src="img3.jpg" alt="Policy and Governance">
+        <a href="#policy">Policy & Governance</a>
+      </div>
+      <div class="card">
+        <img src="img2.jpg" alt="Circular Economy">
+        <a href="#circular">Circular Economy</a>
+      </div>
+      <div class="card">
+        <img src="img4.jpg" alt="Technological Innovation">
+        <a href="#tech">Technological Innovation</a>
+      </div>
+      <div class="card">
+        <img src="img5.jpg" alt="Community Engagement">
+        <a href="#community">Community Engagement</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- NATURE-BASED SOLUTIONS -->
+  <section id="nature">
+    <h2 data-aos="zoom-in">Nature-Based Solutions</h2>
+    <!-- Flip-cards & Accordions -->
+    <!-- Urban Green Spaces -->
+    <div class="flip-card" data-aos="flip-left">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Urban Green Spaces</h3>
+            <br />
+            <img src="nature1.jpg" alt="Urban Green" />
+          </div>
+          <div class="flip-card-back">
+            <p>Reduces heat, cleans air, and enhances well-being in cities.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mangrove Restoration -->
+      <div class="accordion" data-aos="fade-up">
+        <button class="accordion-btn">Mangrove Restoration</button>
+        <div class="accordion-content">
+          <p>
+            Mangroves buffer coasts, provide fish nurseries, and absorb CO₂.
+          </p>
+        </div>
+      </div>
+
+      <!-- Agroforestry -->
+      <div class="flip-card" data-aos="zoom-in">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Agroforestry</h3>
+            <br />
+            <img src="nature2.jpg" alt="Agroforestry" />
+          </div>
+          <div class="flip-card-back">
+            <p>Blends trees and farming for productivity and nature balance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Watershed Management -->
+      <div class="accordion" data-aos="fade-right">
+        <button class="accordion-btn">Watershed Management</button>
+        <div class="accordion-content">
+          <p>
+            Smart land use keeps water sources healthy and helps people thrive.
+          </p>
+        </div>
+      </div>
+
+      <!-- Pollinator Pathways -->
+      <div class="flip-card" data-aos="fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Pollinator Pathways</h3>
+            <br />
+            <img src="nature3.jpg" alt="Pollinators" />
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Helps bees and butterflies thrive and support our food systems.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion" data-aos="fade-right">
+        <button class="accordion-btn">Soil Regeneration</button>
+        <div class="accordion-content">
+          <p>
+            Healthy soil supports crops, water storage, and diverse organisms.
+          </p>
+        </div>
+      </div>
+      <div class="flip-card" data-aos="zoom-in">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Coastal Wetlands Protection</h3>
+            <img src="nature4.jpg" alt="Coastal Wetlands" /><br />
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Protects coasts from erosion, filters water, and supports aquatic
+              life.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion" data-aos="fade-up">
+        <button class="accordion-btn">Sustainable Agriculture Practices</button>
+        <div class="accordion-content">
+          <p>
+            Farming that promotes soil health, reduces chemical use, and
+            benefits ecosystems.
+          </p>
+        </div>
+      </div>
+      <div class="flip-card" data-aos="fade-up">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Green Infrastructure</h3>
+            <img src="nature5.jpg" alt="Green Infrastructure" />
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Incorporates natural systems into cities to reduce environmental
+              impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    <!-- repeat other cards/accordions as needed... -->
+  </section>
+
+  <!-- POLICY & GOVERNANCE -->
+  <section id="policy">
+    <h2>Policy & Governance</h2>
+    <!-- Timeline -->
+    <ul>
+        <li>
+          <div class="timeline-date">2015</div>
+          <div class="timeline-content">The Paris Agreement on Climate Change is signed.</div>
+        </li>
+        <li>
+          <div class="timeline-date">2017</div>
+          <div class="timeline-content">Launch of the Circular Economy Action Plan in Europe.</div>
+        </li>
+        <li>
+          <div class="timeline-date">2020</div>
+          <div class="timeline-content">Global Commitment to Climate Neutrality by 2050.</div>
+        </li>
+      </ul>
+    <!-- Tabs -->
+    <section class="tabs" data-aos="fade-left">
+        <h2>Policy Topics</h2>
+        <div class="tab-buttons">
+          <button class="tab-button active" data-tab="climate-policy">Climate Policy</button>
+          <button class="tab-button" data-tab="resource-policy">Resource Management</button>
+          <button class="tab-button" data-tab="global-governance">Global Governance</button>
+        </div>
+        <div class="tab-content" id="climate-policy">
+          <p>Details about climate change policies.</p>
+        </div>
+        <div class="tab-content" id="resource-policy" style="display: none;">
+          <p>Details about resource management policies.</p>
+        </div>
+        <div class="tab-content" id="global-governance" style="display: none;">
+          <p>Details about global governance policies.</p>
+        </div>
+      </section>
+    
+      <!-- PDF Viewer Section -->
+      <section class="pdf-viewer" data-aos="zoom-in">
+        <h2>Policy Document</h2>
+        <embed src="https://www.jetir.org/papers/JETIR2401424.pdf" width="100%" height="600px" />
+      </section>
+
+  <!-- CIRCULAR ECONOMY -->
+    <section id="circular">
+       <h2>Circular Economy</h2>
+       <section class="chart-container" data-aos="fade-up">
+           <canvas id="wasteChart"></canvas>
+       </section>
+  
+      <!-- Tooltip Info Blocks -->
+       <section data-aos="fade-left">
+           <div
+               class="tooltip-box"
+               data-tooltip="Extending the life of products by finding new uses."
+            >
+             ♻️ Reuse
+            </div>
+            <div
+              class="tooltip-box"
+              data-tooltip="Transforming waste into better-quality products."
+            >
+              🔁 Upcycle
+            </div>
+            <div
+              class="tooltip-box"
+              data-tooltip="Turning waste materials into usable materials again."
+            >
+             ♻️ Recycle
+            </div>
+        </section>
+  
+      <!-- Lottie Animation -->
+       <section class="lottie-container" data-aos="zoom-in">
+            <lottie-player
+              src="https://assets2.lottiefiles.com/packages/lf20_d7vzmkzq.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 300px"
+               loop
+              autoplay
+            >
+            </lottie-player>
+        </section>
+    </section>
+
+  <!-- TECHNOLOGICAL INNOVATION -->
+  <section id="tech">
+    <h2>Technological Innovation</h2>
+    <!-- Sustainability Rating -->
+    <section class="sustainability-rating">
+        <h3>Sustainability Rating</h3>
+        <div class="sustainability-bar">
+          <div class="rating-fill" style="width: 85%"></div>
+        </div>
+        <p>85% Eco-Friendly</p>
+      </section>
+      
+      <!-- Carbon Footprint Calculator -->
+      <section class="carbon-calculator">
+        <h2>Calculate Your Carbon Footprint</h2>
+        <label for="energy-use">Energy Consumption (kWh/month)</label>
+        <input type="number" id="energy-use" placeholder="Enter your energy use">
+        <label for="transportation">Transportation (miles/month)</label>
+        <input type="number" id="transportation" placeholder="Enter miles traveled">
+        <button id="carbon-calculate">Calculate Footprint</button>
+        <p id="carbon-result"></p>
+      </section>
+      
+      <!-- Innovation Timeline -->
+      <section class="timeline-container">
+        <div class="timeline-item">
+          <h3>2010: First Solar-Powered Car</h3>
+          <p>The world's first fully solar-powered car was unveiled, signaling the beginning of green automotive innovation.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2015: Breakthrough in Energy-Efficient Solar Panels</h3>
+          <p>New solar panels with 30% more energy efficiency are introduced, making renewable energy more accessible.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2020: Smart Grids and Renewable Energy Integration</h3>
+          <p>Smart grids that integrate renewable energy sources into national grids become more widespread, leading to reduced energy waste.</p>
+        </div>
+      </section>
+      
+      <!-- Virtual Eco-Innovation Expo -->
+      <section class="expo-container">
+        <div class="expo-booth">
+          <h3>Solar Power Solutions</h3>
+          <p>Learn about the latest advancements in solar technology and its applications in various industries.</p>
+          <button>Visit Booth</button>
+        </div>
+        <div class="expo-booth">
+          <h3>Electric Vehicles</h3>
+          <p>Explore innovations in electric vehicles, including fast-charging infrastructure and battery technologies.</p>
+          <button>Visit Booth</button>
+        </div>
+        <div class="expo-booth">
+          <h3>Energy Storage Innovations</h3>
+          <p>Discover cutting-edge energy storage solutions that support renewable energy adoption worldwide.</p>
+          <button>Visit Booth</button>
+        </div>
+      </section>
+      
+      <!-- Green Tech Blog & Articles -->
+      <section class="blog-container">
+        <div class="blog-post">
+          <h3>Innovative Approaches to Carbon Capture</h3>
+          <p>Explore new technologies that help reduce carbon emissions through innovative capture techniques.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="blog-post">
+          <h3>How Electric Cars Are Changing the World</h3>
+          <p>Electric vehicles are playing a major role in reducing global greenhouse gas emissions. Here's how.</p>
+          <a href="#">Read More</a>
+        </div>
+      </section>
+  </section>
+
+  <!-- COMMUNITY ENGAGEMENT -->
+  <section id="community">
+    <h2>Community Engagement</h2>
+    <!-- Sustainability Map -->
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1L1a1L1a1L1a1L1a1L1a1L1a1L1a" loading="lazy"></iframe>
+    </div>
+    <!-- Volunteer Dashboard -->
+    <div id="volunteer-dashboard">
+      <h3>Volunteer Hour Dashboard</h3>
+      <div class="stats">
+        <div><p id="total-hours">0h</p><small>Total Hours</small></div>
+        <div><p id="volunteer-count">0</p><small>Volunteers</small></div>
+      </div>
+      <form id="vol-form">
+        <input id="vol-name" placeholder="Name" required />
+        <input id="vol-hours" type="number" placeholder="Hours" required />
+        <button type="submit">Log Hours</button>
+      </form>
+      <ul id="top-vols"></ul>
+    </div>
+    <!-- Pledge Wall -->
+    <div id="pledge-wall">
+      <h3>Pledge Wall</h3>
+      <div id="pledges"></div>
+      <form id="pledge-form">
+        <input id="pledge-name" placeholder="Your Name" required />
+        <textarea id="pledge-text" placeholder="Your Pledge" required></textarea>
+        <button>Add Pledge</button>
+      </form>
+    </div>
+    <!-- Live Feed -->
+    <div id="live-feed">
+      <h3>Live Feed</h3>
+      <div id="feed-container"></div>
+      <button id="add-feed">Add Feed</button>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact">
+    <h2>Impact</h2>
+    <!-- Live Counter -->
+    <section id="impact-counter">
+        <h2>Live Environmental Impact</h2>
+        <br />
+        <div class="counter-boxes">
+          <div class="counter">
+            <h3 class="count" data-target="5321">0</h3>
+            <p>Trees Planted</p>
+          </div>
+          <div class="counter">
+            <h3 class="count" data-target="870">0</h3>
+            <p>KGs Plastic Saved</p>
+          </div>
+          <div class="counter">
+            <h3 class="count" data-target="1450">0</h3>
+            <p>Volunteer Hours</p>
+          </div>
+        </div>
+      </section>
+      <section id="impact-stats" class="impact-section">
+        <h2>Our Environmental Impact</h2>
+        <div class="impact-grid">
+          <div class="impact-box">
+            <h3><span class="impact-count" data-target="50000">0</span></h3>
+            <p>Trees Planted</p>
+          </div>
+          <div class="impact-box">
+            <h3><span class="impact-count" data-target="120000">0</span></h3>
+            <p>Plastic Bottles Saved</p>
+          </div>
+          <div class="impact-box">
+            <h3><span class="impact-count" data-target="75000">0</span></h3>
+            <p>KG CO₂ Reduced</p>
+          </div>
+        </div>
+      </section>
+  
+      <section id="leaderboard">
+        <h2>Impact Leaderboard</h2>
+        <ol class="leaderboard">
+          <li><strong>GreenTech Inc.</strong> – 1200 points</li>
+          <li><strong>Eco Warriors</strong> – 1100 points</li>
+          <li><strong>Green Catalysts</strong> – 980 points</li>
+        </ol>
+      </section>
+      <section id="impact-report">
+        <h2>Download Our Impact Report</h2>
+        <br />
+        <a href="impact-report-2025.pdf" class="btn-download" download
+          >Download PDF</a
+        >
+      </section>
+      <section id="sdg-tracker">
+        <h2>SDG Alignment Tracker</h2>
+        <div class="sdg-cards">
+          <div class="sdg-card" data-sdg="13">
+            <img src="imp1.jpg" alt="Climate Action" /><br>
+            <p>Climate Action</p>
+          </div>
+          <div class="sdg-card" data-sdg="12">
+            <img src="imp2.jpg" alt="Responsible Consumption" />
+            <p>Responsible Consumption</p>
+          </div>
+          <div class="sdg-card" data-sdg="15">
+            <img src="imp3.jpg" alt="Life on Land" />
+            <p>Life on Land</p>
+          </div>
+        </div>
+      </section>
+  
+      <section id="volunteer-timeline">
+        <h2>Volunteer Hours Timeline</h2>
+        <ul class="volunteer-list">
+          <li>
+            <span class="timeline-date">Jan 2025</span>
+            <div class="timeline-content">
+              120 volunteer hours – Beach Cleanup Campaign
+            </div>
+          </li>
+          <li>
+            <span class="timeline-date">Feb 2025</span>
+            <div class="timeline-content">
+              95 volunteer hours – Tree Planting Drive
+            </div>
+          </li>
+          <li>
+            <span class="timeline-date">Mar 2025</span>
+            <div class="timeline-content">
+              150 volunteer hours – Plastic-Free Community Challenge
+            </div>
+          </li>
+        </ul>
+      </section>
+  
+      <section id="success-carousel">
+        <h2>Success Stories</h2>
+        <div class="carousel-container">
+          <div class="carousel-item">
+            <img src="imp4.jpg" alt="Story 1">
+            <p>Transformed a polluted lake into a thriving wetland.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="imp5.jpg" alt="Story 2">
+            <p>Planted 10,000+ trees in rural communities.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="imp6.jpg" alt="Story 3">
+            <p>Engaged over 500 students in eco-literacy programs.</p>
+          </div>
+        </div>
+      </section>
+  </section>
+
+  <!-- JOIN -->
+  <section id="join">
+    <h2>Join Us</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="joinForm">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-group">
+          <label for="phone">Phone Number (optional):</label>
+          <input type="text" id="phone" name="phone" placeholder="Enter your phone number" />
+        </div>
+  
+        <div class="form-group">
+          <label for="interest">What are you interested in?</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interest" value="Volunteer for Clean-up Events" /> Volunteer for Clean-up Events</label><br />
+            <label><input type="checkbox" name="interest" value="Support Tree Planting" /> Support Tree Planting</label><br />
+            <label><input type="checkbox" name="interest" value="Educate Others on Sustainability" /> Educate Others on Sustainability</label><br />
+            <label><input type="checkbox" name="interest" value="Join Our Renewable Energy Webinar" /> Join Our Renewable Energy Webinar</label><br />
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="message">Any Message or Questions? (optional)</label>
+          <textarea id="message" name="message" rows="4" placeholder="Let us know how you would like to contribute..."></textarea>
+        </div>
+  
+        <div class="form-group">
+          <button type="submit">Join Now</button>
+        </div>
+      </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Green Catalyst. All rights reserved.</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="script.js"></script>
+  <script> AOS.init(); </script>
+</body>
+</html>
+
+
